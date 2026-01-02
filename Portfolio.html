@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal Portfolio of a Computer Science Student">
+    <meta name="keywords" content="Portfolio, Student, Resume, HTML, Computer Science">
+    <meta name="author" content="Moein">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <h1>Mominul Islam Moein</h1>
+        <nav>
+            <ul>
+                <li><a href="#biography">Biography</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section id="biography">
+        <h2>Biography</h2>
+        <p>
+            I am a dedicated Computer Science student passionate about technology and coding. 
+            My goal is to become a Machine learning Engineer. I enjoy solving problems and learning new skills.
+        </p>
+    </section>
+
+    <hr>
+
+    <section id="education">
+        <h2>Education</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>B.Sc. in Computer Science</td>
+                    <td>American International University of Bangladesh</td>
+                    <td>Ongoing</td>
+                    <td>3.00</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>Govt.Science College</td>
+                    <td>2021</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>SSC</td>
+                    <td>Dhaka Cantonment Board Adarsha Biddyaniketon</td>
+                    <td>2019</td>
+                    <td>5.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="post">
+            <div>
+                <label for="fullname">Full Name:</label>
+                <br>
+                <input type="text" id="fullname" name="fullname" placeholder="Your_Name" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="Your_Email" required>
+            </div>
+            <br>
+            <div>
+
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message" rows="4" cols="50">Hello, I reviewed your portfolio and I am impressed by your background. I would like to discuss a potential job opportunity with you.</textarea>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Send Message">
+            </div>
+        </form>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; Moein*</p>
+    </footer>
+
+</body>
+</html>
