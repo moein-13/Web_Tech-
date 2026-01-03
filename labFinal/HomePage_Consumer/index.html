@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Farm Market</title>
+   
+    <link rel="stylesheet" href="style.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="logo">🌱 AGRO</div>
+        <div class="search-container" id="search-bar-container">
+            <input type="text" id="searchInput" placeholder="Search crops...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+        
+            <div id="shop-view">
+                <h2>Fresh Produce from Farmers</h2>
+                <div id="product-grid" class="product-grid">
+                
+                </div>
+                <div id="no-results" style="display:none; text-align:center;">
+                    <p>No crops found matching your search.</p>
+                </div>
+            </div>
+
+          
+            <div id="detail-view" style="display: none;">
+                <button id="back-btn" class="back-link">← Back to Shop</button>
+                
+                <div class="product-detail-card">
+                    <div class="detail-image">
+                        <img id="detail-img" src="" alt="">
+                    </div>
+                    <div class="detail-info">
+                        <h1 id="detail-name">Loading...</h1>
+                        <p class="farmer-tag">👨‍🌾 Grown by: <span id="detail-farmer"></span></p>
+                        <h2 class="price" id="detail-price"></h2>
+                        <p class="stock-status">Available Stock: <span id="detail-stock"></span> kg</p>
+                        
+                        <hr>
+                        
+                        <h3>Description</h3>
+                        <p id="detail-desc"></p>
+                        
+                        <button class="buy-btn">Contact Farmer</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smart Farming Marketplace Project</p>
+    </footer>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>

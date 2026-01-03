@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile - Dark Mode</title>
+    
+
+    <style>    
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+           
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            min-height: 100vh;
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.3); 
+            color: #ffffff;
+            padding: 1.5em 0;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+
+        .profile-card {
+            width: 50%;
+            max-width: 600px;
+            margin: 0 auto;
+
+
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            
+            border: 1px solid rgba(255, 255, 255, 0.2); 
+            border-radius: 20px; 
+            padding: 40px;
+            
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            position: relative; 
+        }
+
+        .window-controls {
+            display: flex;
+            gap: 8px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .red { background-color: #ff5f56; }
+        .yellow { background-color: #ffbd2e; }
+        .green { background-color: #27c93f; }
+
+      
+        .profile-photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+        
+            border: 3px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            margin-top: 10px;
+            margin-bottom: 1.5em;
+        }
+
+        .student-name {
+            color: #ffffff;
+            font-size: 2em;
+            margin: 10px 0;
+            font-weight: 600;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .student-info {
+            color: #d1d5db; 
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            font-weight: 400;
+        }
+
+        .bio {
+            margin-top: 25px;
+            color: #e0e0e0;
+            line-height: 1.6;
+            font-size: 1em;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+      
+        footer {
+            text-align: center;
+            padding: 2em;
+            margin-top: 40px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Portal</h1>
+    </header>
+
+    <main class="profile-card">
+    
+        <div class="window-controls">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+        </div>
+
+        <img 
+            src="https://scontent.fdac41-1.fna.fbcdn.net/v/t39.30808-6/469124468_1276601973583399_567041770760787481_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeH1JyAeaj_XQ1MvEr7_NUToVwOMIfD69EJXA4wh8Pr0Qls82f1p0go7_kbmoluFl6mEj11rfkmO4EDjGvlCXfZ0&_nc_ohc=me1wnm_Gs1kQ7kNvwH_SHMs&_nc_oc=AdkAyd7LSOisN_1rtPGirCwp2rqz9ZHNlEoQKBRMWl6SpQQmRNolRTX9TC_LpIh0L_c&_nc_zt=23&_nc_ht=scontent.fdac41-1.fna&_nc_gid=qOPalvz3k4ACLhnMBfR3dA&oh=00_AfiN5PnXRcaIrQK4W9VVqkR783v3dmCVhgGmWDvSpvglJA&oe=69291175" 
+            alt="Student Photo" 
+            class="profile-photo"
+            onerror="this.src='https://via.placeholder.com/150?text=Photo'"
+        >
+        
+        <h2 class="student-name">Mominul Islam Moein</h2>
+        <p class="student-info">Department of CSE</p>
+        <p class="student-info">ID: 23-51372-1</p>
+        
+        <p class="bio">
+            Moein is currently learning Machine Learning (ML) and has gained knowledge in various Data Analysis concepts and tools.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; Ami_Moein</p>
+    </footer>
+
+</body>
+</html>
